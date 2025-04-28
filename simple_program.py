@@ -104,7 +104,6 @@ counter = 5
 while counter >= 1:
     print('apple')
     counter -= 1
-'''
 
 
 dic = {
@@ -115,4 +114,49 @@ dic = {
     'e': 'elephant'
 }
 
-print(dic.get('g','g is not Found')) 
+print(dic.get('g', 'g is not Found'))
+
+# lambda functions
+
+# lambda arguments : expression
+
+def add(i, j):
+    return i+j
+
+
+print(add(3, 4))
+
+
+fn = lambda a, b: a+b
+
+print(fn(5,7))
+
+
+# FILTER
+# filter(function, iterables)
+
+
+# def even(a):
+#     return a % 2 == 0
+
+nums = [0,1,2,3,4,5,6]
+
+# ans = list(filter(even, nums))
+ans = list(filter(lambda a: a % 2 == 0, range(11)))
+print(ans)
+
+
+
+# MAP
+# map(function, iterables)
+
+# def square(a):
+#     return a * a
+
+# nums = range(6)
+
+# ans = list(map(square,nums))
+
+ans = list(map(lambda a: a**2, range(6)))
+print(ans)
+'''
