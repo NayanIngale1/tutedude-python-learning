@@ -79,8 +79,6 @@ def fibonacci_recursive(n):
     return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 
 
-print(fibonacci_recursive(10))
-
 n = int(input("Enter number of terms: "))
 for i in range(n):
     print(fibonacci_recursive(i), end=' ')
