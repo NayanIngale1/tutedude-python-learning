@@ -60,13 +60,13 @@ def fibbo(n):
             arr.append(i)
             continue
 
-        arr.append(arr[len(arr)-1]+arr[len(arr)-2])
+        arr.append(arr[-1]+arr[-2])
 
     print(arr)
 
 
-fibbo(n)
 n = int(input('Enter number of terms: '))
+fibbo(n)
 
 '''
 
